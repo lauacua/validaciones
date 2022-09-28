@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array-from</title>
+</head>
+<body>
+   
+    <h1>Array- from</h1>
+    <p>en este caso pasa los numeros a valor my devuelve el resultado, queda almacenado el resultado</p>
+
+    <script type="text/javascript">
+
+        function suma_numeros(valor){
+            return valor*2;
+
+        }
+
+        let array_numeros=new Array(10,20,30,40);
+        let nuevo_array_numeros=Array.from(array_numeros,suma_numeros);
+        alert(nuevo_array_numeros);
+    </script>
+
+</body>
+</html>
